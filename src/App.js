@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import { Route, Routes }from "react-router-dom";
+import Header from './Components/Header';
+import Homepage from './Pages/Homepage';
+import Coinpage from './Pages/Coinpage';
+//import Header from './Components/Header';
+//import Contact from './Pages/Contact';
+
+
+
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='main'>
+    <Header/>
+    
+   
+   <Routes>
+       <Route  path="/" element={<Homepage/>} />
+       <Route path ="/Coinpage/:id" element={<Coinpage/>}/>
+       {/* <Route path ="/Contact" element={<Contact />}/> */}
+      
+    </Routes>
+       
+    
+
+
+
+   </div>
+  
   );
 }
+
+
+
+
 
 export default App;

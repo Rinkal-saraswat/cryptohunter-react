@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration:none;
+   color:white;
+}
+.list{
+  display: flex;
+   justify-content: right;
+   list-style:none; 
+   margin-left: 660px;
+  
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li{
+  padding: 10px;
+  /* margin-right:20px ; */
+
+}
+.list :hover{
+  text-decoration: underline;
+  transition: transform .3s;
+  transform: scale(1.2);
+}
+
+/* .header{
+  background-color:rgb(200, 137, 137);
+} */
+.main{
+  background-color: #14161a;
+  height:100vh;
+  color: white;
+}
+.crypt{
+  color:gold;
+  padding-left: 2px;
+  font-family: 'Monsterrat';
+  
+  font-weight:'bold';
+  font-size: 'large';
+  cursor:pointer;
+  
+}
+.carouselitem{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white ;
+}
+
+
+.classrow :hover{
+    background-color: rgb(223, 228, 242);
+    cursor: pointer;
+    
+}
+
+.pagi:MuiPaginationItem-root{
+  color: "black";
+}
+ .containerpage{
+  display: flex;
+  background-color: black;
+  /* [theme.breakpoints.down("md")]:{
+    flex-direction: "column";
+    align-items: center;
+  } */
+} 
+@media only screen and (max-width: 900px) {
+  [class*="containerpage"] {
+    flex-direction: column;
+    align-items: center;
+
   }
 }
+.sidebar{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-right: 2px solid greenyellow;  
+}
+@media only screen and (max-width: 768px) {
+  [class*="sidebar"] {
+    width: 100%;
+  /* /////////// y sidebar ki query h ise comment out bhi kr k dekh lena agrkoi error aae to  */
+  }
+}
+.heading{
+  font-weight: bolder;
+  margin-bottom: 20;
+  font-family: Montserrat;
+}
+.description{
+  width: 100%;
+  font-family: Montserrat;
+  padding: 5%;
+  padding-bottom: 10%;
+  padding-top: 2%;
+  text-align: justify;
+}
+.marketData{
+  align-self: start;
+  padding: 15%;
+  padding-top: 10%;
+  width:100%;
+  
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* @media only screen and (max-width: 768px){
+  [class*="marketData"] {
+    display:flex;
+    justify-content: space-around;
+
+  }
+
+} */
+
+/* @media only screen and (max-width: 900px) {
+  [class*="marketData"] {
+    display:column;
+    align-items: center;
+
+  }
+
+}
+@media only screen and (min-width: 900px)  {
+  [class*="marketData"] {
+    
+    align-items: start;
+
+  }
+
+}  */
+.ContainerChart{
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin-top: 25;
+  padding: 40;
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+@media only screen and (max-width: 768px)  {
+  [class*="ContainerChart"] {
+    width: 100%;
+    margin-top: 0;
+    padding: 20;
+    padding-top: 0;
+    align-items: start;
+
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+} 
+.selectbutton {
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Montserrat;
+  cursor: pointer;
+  /* background-color: gold; */
+  
+  margin:5px;
+}
+.selectbutton:hover{
+  background-color: gold;
+  color:black;
+  font-weight: 700;
 }
