@@ -101,12 +101,12 @@ const CoinsTable = () => {
                                                     }}>
                                                         {row.symbol}
                                                     </span>
-                                                    <span style={{color:"Black"}}>{row.name}</span>
+                                                    <span style={{color:"white"}}>{row.name}</span>
 
                                                 </div>
                                             </TableCell>  
                                            
-                                            <TableCell align="right" style={{color:'black'}}>
+                                            <TableCell align="right" style={{color:'white'}}>
                                                 {symbol}{" "}
                                                 {numberWithCommas(row.current_price.toFixed(2))}
                                             </TableCell>
@@ -117,7 +117,7 @@ const CoinsTable = () => {
                                                 
                                                 
                                             </TableCell>
-                                            <TableCell align="right" style={{color:'black'}}>
+                                            <TableCell align="right" style={{color:'white'}}>
                                                 {symbol}{" "}
                                                 {numberWithCommas(row.market_cap.toString().slice(0,-6))}M
                                             </TableCell>           
