@@ -25,6 +25,9 @@ const CoinsTable = () => {
     useEffect(()=>{
         fetchCoins();
     },[Currency]);
+     useEffect(() => {
+        setpage(1);
+    }, [search]);
 
     const darkTheme = createTheme({
         palette: {
