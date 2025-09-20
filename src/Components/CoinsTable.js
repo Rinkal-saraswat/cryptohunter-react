@@ -100,7 +100,7 @@ const CoinsTable = () => {
                                                 style={{marginBottom:10}}/>
                                                 <div style={{display:"flex",flexDirection:"column"}}>
                                                     <span style={{textTransform:"uppercase",
-                                                        fontSize:18,color:"Black"
+                                                        fontSize:18,color:"White"
                                                     }}>
                                                         {row.symbol}
                                                     </span>
