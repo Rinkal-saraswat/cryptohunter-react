@@ -39,7 +39,7 @@ li{
 } */
 .main{
   background-color: #14161a;
-  height:100vh;
+/*   height:100vh; */
   color: white;
 }
 .crypt{
@@ -61,11 +61,23 @@ li{
   color: white ;
 }
 
+.classRow:hover {
+  background-color: rgb(223, 228, 242);
+  cursor: pointer;
+}
+.classRow:hover td,
+.classRow:hover th ,
+.classRow:hover td *,
+.classRow:hover th * {
+  color: black !important;
+}
 
-.classrow :hover{
-    background-color: rgb(223, 228, 242);
-    cursor: pointer;
-    
+/* smooth transition */
+.classRow td,
+.classRow th,
+.classRow td *,
+.classRow th *  {
+  transition: background-color 150ms ease, color 150ms ease;
 }
 
 .pagi:MuiPaginationItem-root{
